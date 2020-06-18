@@ -5,7 +5,7 @@ import (
 	"log"
 	"runtime"
 
-	"github.com/belikesayantan/ytmusic-cli/ytsearch"
+	"github.com/belikesayantan/youtube-tui/ytsearch"
 	ui "github.com/gizak/termui/v3"
 	"github.com/gizak/termui/v3/widgets"
 )
