@@ -24,6 +24,7 @@ jobs:
 
     - name: Get dependencies
       run: |
+        sudo apt-get install libvlc-dev vlc-plugin-base vlc-plugin-video-output vlc
         go get -v -t -d ./...
         if [ -f Gopkg.toml ]; then
             curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
