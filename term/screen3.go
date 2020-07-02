@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"runtime"
+	"time"
 
 	"github.com/belikesayantan/youtube-tui/ytsearch"
 	ui "github.com/gizak/termui/v3"
@@ -35,6 +36,11 @@ func Initscreen3(filetype string) {
 	title.TextStyle.Fg = ui.ColorRed
 	title.SetRect(105, 9, 149, 12)
 
+	empty := widgets.NewParagraph()
+	empty.Text = " TYPE SOMETHING AND THEN PRESS ENTER !"
+	empty.Border = true
+	empty.SetRect(40, 13, 100, 16)
+
 	query := ""
 	st := &keypress{}
 	prompt := func(st *keypress) {
@@ -44,7 +50,7 @@ func Initscreen3(filetype string) {
 		p.Title = "Search Box"
 		p.Text = fmt.Sprintf("%s", st.queryRender)
 
-		p.SetRect(40, 10, 100, 13)
+		p.SetRect(40, 13, 100, 16)
 
 		ui.Render(YTdesign, title, p)
 	}
@@ -57,6 +63,12 @@ func Initscreen3(filetype string) {
 		e := <-menuEvents
 
 		if e.Type == ui.KeyboardEvent && e.ID == "<Enter>" {
+			if query == "" {
+				ui.Render(empty)
+				time.Sleep(5 * time.Second)
+				prompt(st)
+				break
+			}
 			results := ytsearch.GetMusicList(query)
 			QueryResults(query, results, filetype)
 			query = ""

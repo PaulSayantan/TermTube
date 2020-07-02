@@ -12,9 +12,9 @@ type keypress struct {
 	queryRender string
 }
 
-// type id struct {
-// 	index int
-// }
+type id struct {
+	index int
+}
 
 // Renders the screen in the terminal
 func Initscreen1() {
@@ -85,57 +85,5 @@ func Initscreen1() {
 		case "<Enter>":
 			renderTabOne()
 		}
-
 	}
-
-	// for {
-	// 	e := <-menuEvents
-
-	// }
-
-	// musicToolbar := widgets.NewTabPane("Play", "Pause", "Stop", "Seek Backward", "Jump Forward")
-	// musicToolbar.SetRect(35, 13, 90, 16)
-	// musicToolbar.Border = true
-
-	// renderTab := func() {
-	// 	switch musicToolbar.ActiveTabIndex {
-	// 	case 0:
-	// 		// write the playing music function here
-	// 		ui.Render(play)
-	// 	case 1:
-	// 		// write the pause music function here
-	// 		ui.Render(pause)
-	// 	case 2:
-	// 		// write the stop music function here
-	// 		ui.Render(stop)
-	// 	case 3:
-	// 		// write the backward music function here
-	// 		ui.Render(back)
-	// 	case 4:
-	// 		// write the jumping music function here
-	// 		ui.Render(jump)
-	// 	}
-	// }
-
-	// ui.Render(YTdesign, title, musicToolbar)
-
-	// uiEvents := ui.PollEvents()
-
-	// for {
-	// 	e := <-uiEvents
-	// 	switch e.ID {
-	// 	case "q", "<C-c>":
-	// 		return
-	// 	case "left":
-	// 		musicToolbar.FocusLeft()
-	// 		ui.Clear()
-	// 		ui.Render(YTdesign, musicToolbar)
-	// 		renderTab()
-	// 	case "right":
-	// 		musicToolbar.FocusRight()
-	// 		ui.Clear()
-	// 		ui.Render(YTdesign, musicToolbar)
-	// 		renderTab()
-	// 	}
-	// }
 }

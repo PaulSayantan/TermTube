@@ -7,6 +7,7 @@ import (
 	"github.com/gizak/termui/v3/widgets"
 )
 
+// QueryResults :	function that recieves query string and sends id to player
 func QueryResults(query string, results map[string]string, filetype string) {
 	if err := ui.Init(); err != nil {
 		log.Fatalf("failed to initialize termui: %v", err)
@@ -54,11 +55,11 @@ func QueryResults(query string, results map[string]string, filetype string) {
 	resultlist.SetRect(20, 15, 110, 33)
 	resultlist.Border = false
 
-	// st := &id{}
-	// sendid := func(st *id) string {
-	// 	tid := results[rlist[st.index]]
-	// 	return tid
-	// }
+	st := &id{}
+	sendid := func(st *id) string {
+		tid := results[rlist[st.index]]
+		return tid
+	}
 
 	ui.Render(YTdesign, title, resultlist)
 
@@ -92,12 +93,10 @@ func QueryResults(query string, results map[string]string, filetype string) {
 		case "G", "<End>":
 			resultlist.ScrollBottom()
 		case "<Enter>":
-			//i := resultlist.SelectedRow
-			//st.index = i
-			ui.Clear()
-			ui.Close()
-			Play(filetype)
-
+			i := resultlist.SelectedRow
+			st.index = i
+			name := rlist[st.index]
+			Play(sendid(st), name, filetype)
 		}
 
 		if previousKey == "g" {
