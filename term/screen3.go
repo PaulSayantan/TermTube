@@ -11,8 +11,8 @@ import (
 	"github.com/gizak/termui/v3/widgets"
 )
 
-// Renders the screen in the terminal
-func Initscreen3(filetype string) {
+// Screen3 : Renders the search box in the terminal
+func Screen3(filetype string) {
 	if err := ui.Init(); err != nil {
 		log.Fatalf("failed to initialize termui: %v", err)
 	}
@@ -75,7 +75,7 @@ func Initscreen3(filetype string) {
 			break
 		}
 		if e.Type == ui.KeyboardEvent && e.ID == "<Escape>" {
-			Initscreen2()
+			Screen2()
 		}
 		if e.Type == ui.KeyboardEvent && e.ID == "<Space>" {
 			query += " "

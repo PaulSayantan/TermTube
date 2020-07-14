@@ -10,7 +10,7 @@ import (
 	"strings"
 )
 
-// Returns user-input query
+// GetQuery : returns user-input query
 func GetQuery() string {
 
 	fmt.Println("Search: ")
@@ -25,7 +25,7 @@ func GetQuery() string {
 
 }
 
-// Returns a dict of title and id based on user-query
+// GetMusicList : returns a dict of title and id based on user-query
 func GetMusicList(query string) map[string]string {
 
 	qarg := `ytsearch20: ` + query

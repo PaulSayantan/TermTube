@@ -7,6 +7,6 @@ import (
 //search "github.com/belikesayantan/ytmusic-cli/ytsearch"
 
 func main() {
-	term.Initscreen1()
+	term.Screen1()
 
 }

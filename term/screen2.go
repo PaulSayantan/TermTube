@@ -8,8 +8,8 @@ import (
 	"github.com/gizak/termui/v3/widgets"
 )
 
-// Renders the screen in the terminal
-func Initscreen2() {
+// Screen2 : renders the searching Menu in terminal
+func Screen2() {
 	if err := ui.Init(); err != nil {
 		log.Fatalf("failed to initialize termui: %v", err)
 	}
@@ -40,13 +40,13 @@ func Initscreen2() {
 	renderTabTwo := func() {
 		switch searcherPane.ActiveTabIndex {
 		case 0:
-			Initscreen3("Audios")
+			Screen3("Audios")
 		case 1:
-			Initscreen3("Videos")
+			Screen3("Videos")
 		case 2:
-			Initscreen3("Playlists")
+			Screen3("Playlists")
 		case 3:
-			Initscreen2()
+			Screen2()
 			break
 		case 4:
 			ui.Clear()
@@ -64,7 +64,6 @@ func Initscreen2() {
 
 		switch e.ID {
 		case "<Escape>":
-			//ask the user to quit or not
 			return
 		case "<Left>":
 			searcherPane.FocusLeft()

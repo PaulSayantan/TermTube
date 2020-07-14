@@ -10,7 +10,7 @@ import (
 )
 
 //PlayAudio : 	Function for audio playback
-func PlayAudio(uri string, name string) {
+func PlayAudio(uri, name string) {
 
 	if err := vlc.Init("--no-video", "--quiet"); err != nil {
 		log.Fatal(err)

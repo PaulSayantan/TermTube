@@ -16,8 +16,8 @@ type id struct {
 	index int
 }
 
-// Renders the screen in the terminal
-func Initscreen1() {
+// Screen1 : Renders the initial screen in the terminal
+func Screen1() {
 	if err := ui.Init(); err != nil {
 		log.Fatalf("failed to initialize termui: %v", err)
 	}
@@ -48,7 +48,7 @@ func Initscreen1() {
 	renderTabOne := func() {
 		switch permitPane.ActiveTabIndex {
 		case 0:
-			Initscreen2()
+			Screen2()
 
 		case 1:
 			ui.Clear()

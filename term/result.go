@@ -7,7 +7,7 @@ import (
 	"github.com/gizak/termui/v3/widgets"
 )
 
-// QueryResults :	function that recieves query string and sends id to player
+// QueryResults :	recieves query string and sends id to player
 func QueryResults(query string, results map[string]string, filetype string) {
 	if err := ui.Init(); err != nil {
 		log.Fatalf("failed to initialize termui: %v", err)
@@ -31,12 +31,6 @@ func QueryResults(query string, results map[string]string, filetype string) {
 	title.Border = false
 	title.TextStyle.Fg = ui.ColorRed
 	title.SetRect(105, 9, 149, 12)
-
-	// searchinfo := widgets.NewParagraph()
-	// searchinfo.SetRect(10, 11, 90, 12)
-	// searchinfo.Text = fmt.Sprintf("Results: %s for %s", filetype, query)
-	// searchinfo.BorderTop = false
-	// searchinfo.Border = false
 
 	resultlist := widgets.NewList()
 	resultlist.Title = "Results for: " + query
@@ -71,7 +65,7 @@ func QueryResults(query string, results map[string]string, filetype string) {
 		case "q", "<C-c>":
 			ui.Clear()
 			ui.Close()
-			Initscreen2()
+			Screen2()
 		case "j", "<Down>":
 			resultlist.ScrollDown()
 		case "k", "<Up>":

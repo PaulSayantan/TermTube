@@ -10,7 +10,7 @@ import (
 )
 
 //PlayVideo : 	Function for video playback
-func PlayVideo(uri string, name string) {
+func PlayVideo(uri, name string) {
 	if err := vlc.Init(); err != nil {
 		log.Fatal(err)
 	}
