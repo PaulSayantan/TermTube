@@ -43,7 +43,7 @@ func PlayAudio(uri, name string) {
 	}
 
 	if err := ui.Init(); err != nil {
-		log.Fatalf("failed to initialize termui: %v", err)
+		log.Printf("failed to initialize termui: %v", err)
 	}
 	defer ui.Close()
 
@@ -58,6 +58,7 @@ func PlayAudio(uri, name string) {
 	ctrlList.TitleStyle.Modifier = ui.ModifierBold
 	ctrlList.TitleStyle.Fg = ui.ColorCyan
 	ctrlList.Rows = []string{
+		"================================================",
 		"[Space]	::	Toogle play/pause the music",
 		"  [S]		::	Stop playing the current song and exit",
 		"  [→]		::	seek forward 10s",

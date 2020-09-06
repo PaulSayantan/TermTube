@@ -9,7 +9,7 @@ import (
 	"github.com/belikesayantan/youtube-tui/ytvideo"
 )
 
-func Play(id string, name string, filetype string) {
+func Play(id, name, filetype string) {
 	if filetype == "Audios" {
 		uri, err := exec.Command("youtube-dl", "-g", id).CombinedOutput()
 		if err != nil {

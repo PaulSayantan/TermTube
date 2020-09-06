@@ -84,7 +84,7 @@ func Screen3(filetype string) {
 		}
 		if runtime.GOOS == "windows" {
 			if e.Type == ui.KeyboardEvent && e.ID == "<C-<Backspace>>" {
-				if len(query) == 0 {
+				if query == "" {
 					break
 				}
 				query = query[:len(query)-1]
@@ -93,7 +93,7 @@ func Screen3(filetype string) {
 			}
 		} else {
 			if e.Type == ui.KeyboardEvent && e.ID == "<Backspace>" {
-				if len(query) == 0 {
+				if query == "" {
 					break
 				}
 				query = query[:len(query)-1]
