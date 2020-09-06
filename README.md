@@ -17,5 +17,16 @@ Listen to music and watch video, right from your terminal
 
 * [VLC SDK](https://github.com/adrg/libvlc-go/wiki/Install-on-Linux)
 
+## Installation
+
+```
+$ git clone https://github.com/belikesayantan/youtube-tui.git
+
+$ cd youtube-tui
+
+$ CGO_CFLAGS="-w" go build 
+
+$ ./youtube-tui
+```
 
 ![initial-screen](https://user-images.githubusercontent.com/53504602/92327302-486afe00-f076-11ea-92f6-65db95a990f2.png)
