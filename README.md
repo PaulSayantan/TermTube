@@ -1,6 +1,9 @@
 <h1 align="center">youtube-tui 
 
 ![](https://img.shields.io/badge/YouTube-Terminal%20App-black?logoColor=fc2803&style=for-the-badge&logo=youtube)
+
+<img src="https://user-images.githubusercontent.com/53504602/92931573-454e8400-f461-11ea-904f-8fad59bb0d2a.gif" width="150" height="100"/>
+
 </h1>
 
 <div align="center">
@@ -13,7 +16,7 @@
 </div>
 
 A Terminal Youtube App | Play, Listen &amp; Enjoy, right from your terminal !!
-    
+
 
 ## Requirements
 
