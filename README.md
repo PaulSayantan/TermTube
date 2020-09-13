@@ -13,6 +13,7 @@
 
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/belikesayantan/youtube-tui?style=for-the-badge&logo=go)
 ![Codacy grade](https://img.shields.io/codacy/grade/661007379bcc4bca841a5447155f02b3?style=for-the-badge&logo=codacy)
+![Docker Build](https://img.shields.io/docker/cloud/build/belikesayantan/youtube-tui?logo=docker&style=for-the-badge)
 </div>
 
 A Terminal Youtube App | Play, Listen &amp; Enjoy, right from your terminal !!
@@ -38,10 +39,20 @@ $ CGO_CFLAGS="-w" go build
 $ ./youtube-tui
 ```
 ## Docker 
-
+Build
 ```
 docker build -t youtube-tui
+```
+or download pre-build image
+```
+docker pull belikesayantan/youtube-tui
+```
+then run it
+```
 docker run -it --device /dev/snd:/dev/snd youtube-tui:latest 
 ```
+## Show your support
 
-![initial-screen](https://user-images.githubusercontent.com/53504602/92327302-486afe00-f076-11ea-92f6-65db95a990f2.png)
+Give a ⭐ if you liked this project !!
+
+---
