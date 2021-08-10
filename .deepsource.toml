@@ -5,4 +5,4 @@ name = "go"
 enabled = true
 
   [analyzers.meta]
-  import_paths = ["github.com/belikesayantan/youtube-tui"]
+  import_paths = ["github.com/PaulSayantan/youtube-tui"]
