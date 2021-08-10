@@ -5,8 +5,8 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/belikesayantan/youtube-tui/ytaudio"
-	"github.com/belikesayantan/youtube-tui/ytvideo"
+	"github.com/PaulSayantan/youtube-tui/ytaudio"
+	"github.com/PaulSayantan/youtube-tui/ytvideo"
 )
 
 func Play(id, name, filetype string) {
