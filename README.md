@@ -1,4 +1,4 @@
-<h1 align="center">youtube-tui 
+<h1 align="center">TermTube
 
 ![](https://img.shields.io/badge/YouTube-Terminal%20App-black?logoColor=fc2803&style=for-the-badge&logo=youtube)
 
