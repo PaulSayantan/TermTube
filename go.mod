@@ -1,4 +1,4 @@
-module github.com/PaulSayantan/youtube-tui
+module github.com/PaulSayantan/TermTube
 
 go 1.16
 

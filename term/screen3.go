@@ -6,7 +6,7 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/PaulSayantan/youtube-tui/ytsearch"
+	"github.com/PaulSayantan/TermTube/ytsearch"
 	ui "github.com/gizak/termui/v3"
 	"github.com/gizak/termui/v3/widgets"
 )

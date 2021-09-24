@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/PaulSayantan/youtube-tui/term"
+	"github.com/PaulSayantan/TermTube/term"
 )
 
 //search "github.com/belikesayantan/ytmusic-cli/ytsearch"
