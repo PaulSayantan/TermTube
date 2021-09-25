@@ -12,7 +12,7 @@
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/PaulSayantan/TermTube/master?style=for-the-badge&logo=github&color=orange)
 
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/PaulSayantan/TermTube?style=for-the-badge&logo=go)
-![Docker Build](https://img.shields.io/docker/cloud/build/belikesayantan/termtube?logo=docker&style=for-the-badge)
+
 </div>
 
 A Terminal Youtube App | Play, Listen &amp; Enjoy, right from your terminal !!
