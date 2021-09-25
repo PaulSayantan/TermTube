@@ -29,18 +29,18 @@ A Terminal Youtube App | Play, Listen &amp; Enjoy, right from your terminal !!
 ## Installation
 
 ```
-$ git clone https://github.com/PaulSayantan/youtube-tui.git
+$ git clone https://github.com/PaulSayantan/TermTube.git
 
-$ cd youtube-tui
+$ cd TermTube
 
 $ CGO_CFLAGS="-w" go build 
 
-$ ./youtube-tui
+$ ./TermTube
 ```
 ## Docker 
 Build
 ```
-docker build -t youtube-tui
+docker build -t termtube
 ```
 or download pre-build image
 ```
