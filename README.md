@@ -12,7 +12,7 @@
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/PaulSayantan/youtube-tui/master?style=for-the-badge&logo=github&color=orange)
 
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/PaulSayantan/youtube-tui?style=for-the-badge&logo=go)
-![Docker Build](https://img.shields.io/docker/cloud/build/PaulSayantan/TermTube?logo=docker&style=for-the-badge)
+![Docker Build](https://img.shields.io/docker/cloud/build/belikesayantan/termtube?logo=docker&style=for-the-badge)
 </div>
 
 A Terminal Youtube App | Play, Listen &amp; Enjoy, right from your terminal !!
@@ -29,27 +29,31 @@ A Terminal Youtube App | Play, Listen &amp; Enjoy, right from your terminal !!
 ## Installation
 
 ```
-$ git clone https://github.com/PaulSayantan/youtube-tui.git
+$ git clone https://github.com/PaulSayantan/TermTube.git
 
-$ cd youtube-tui
+$ cd TermTube
 
 $ CGO_CFLAGS="-w" go build 
 
-$ ./youtube-tui
+$ ./TermTube
 ```
 ## Docker 
 Build
 ```
-docker build -t youtube-tui
+docker build -t termtube
 ```
 or download pre-build image
 ```
-docker pull PaulSayantan/youtube-tui
+docker pull belikesayantan/termtube
 ```
 then run it
 ```
-docker run -it --device /dev/snd:/dev/snd youtube-tui:latest 
+docker run -it --device /dev/snd:/dev/snd termtube:latest 
 ```
+
+## Codebase Map
+A feature map to visualize the code-base of the current project. Click [here](https://app.codesee.io/maps/9033a700-1d0c-11ec-a981-5f80e2c33b31)
+
 ## Show your support
 
 Give a ⭐ if you liked this project !!
