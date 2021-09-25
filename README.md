@@ -8,10 +8,10 @@
 
 <div align="center">
 
-[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2FPaulSayantan%2Fyoutube-tui%2Fbadge%3Fref%3Dmaster&style=for-the-badge&color=green)](https://actions-badge.atrox.dev/PaulSayantan/youtube-tui/goto?ref=master)
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/PaulSayantan/youtube-tui/master?style=for-the-badge&logo=github&color=orange)
+[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2FPaulSayantan%2FTermTube%2Fbadge%3Fref%3Dmaster&style=for-the-badge&color=green)](https://actions-badge.atrox.dev/PaulSayantan/TermTube/goto?ref=master)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/PaulSayantan/TermTube/master?style=for-the-badge&logo=github&color=orange)
 
-![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/PaulSayantan/youtube-tui?style=for-the-badge&logo=go)
+![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/PaulSayantan/TermTube?style=for-the-badge&logo=go)
 ![Docker Build](https://img.shields.io/docker/cloud/build/belikesayantan/termtube?logo=docker&style=for-the-badge)
 </div>
 
@@ -27,7 +27,6 @@ A Terminal Youtube App | Play, Listen &amp; Enjoy, right from your terminal !!
     - For Windows: https://github.com/adrg/libvlc-go/wiki/Install-on-Windows
 
 ## Installation
-
 ```
 $ git clone https://github.com/PaulSayantan/TermTube.git
 
