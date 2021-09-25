@@ -12,8 +12,7 @@
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/PaulSayantan/youtube-tui/master?style=for-the-badge&logo=github&color=orange)
 
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/PaulSayantan/youtube-tui?style=for-the-badge&logo=go)
-![Codacy grade](https://img.shields.io/codacy/grade/661007379bcc4bca841a5447155f02b3?style=for-the-badge&logo=codacy)
-![Docker Build](https://img.shields.io/docker/cloud/build/PaulSayantan/youtube-tui?logo=docker&style=for-the-badge)
+![Docker Build](https://img.shields.io/docker/cloud/build/PaulSayantan/TermTube?logo=docker&style=for-the-badge)
 </div>
 
 A Terminal Youtube App | Play, Listen &amp; Enjoy, right from your terminal !!
