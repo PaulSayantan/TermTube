@@ -15,4 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag belikesayantan/termtube:latest
+      run:  docker build . --file Dockerfile --tag termtube:latest
+    - name: Push the Docker image
+      run:  docker push belikesayantan/termtube:latest
