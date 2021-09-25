@@ -12,7 +12,7 @@
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/PaulSayantan/youtube-tui/master?style=for-the-badge&logo=github&color=orange)
 
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/PaulSayantan/youtube-tui?style=for-the-badge&logo=go)
-![Docker Build](https://img.shields.io/docker/cloud/build/PaulSayantan/TermTube?logo=docker&style=for-the-badge)
+![Docker Build](https://img.shields.io/docker/cloud/build/belikesayantan/termtube?logo=docker&style=for-the-badge)
 </div>
 
 A Terminal Youtube App | Play, Listen &amp; Enjoy, right from your terminal !!
@@ -44,11 +44,11 @@ docker build -t youtube-tui
 ```
 or download pre-build image
 ```
-docker pull PaulSayantan/youtube-tui
+docker pull belikesayantan/termtube
 ```
 then run it
 ```
-docker run -it --device /dev/snd:/dev/snd youtube-tui:latest 
+docker run -it --device /dev/snd:/dev/snd termtube:latest 
 ```
 ## Show your support
 
