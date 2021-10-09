@@ -12,45 +12,54 @@
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/PaulSayantan/TermTube/master?style=for-the-badge&logo=github&color=orange)
 
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/PaulSayantan/TermTube?style=for-the-badge&logo=go)
+![Docker build](https://img.shields.io/docker/automated/belikesayantan/termtube?color=blue&logo=docker&style=for-the-badge)
 
 </div>
 
 A Terminal Youtube App | Play, Listen &amp; Enjoy, right from your terminal !!
 
-
 ## Requirements
 
-* [Youtube-dl](https://youtube-dl.org/downloads/)
+- [Youtube-dl](https://youtube-dl.org/downloads/)
 
-* VLC SDK
-    - For Unix: https://github.com/adrg/libvlc-go/wiki/Install-on-Linux
-    - For Windows: https://github.com/adrg/libvlc-go/wiki/Install-on-Windows
+- VLC SDK
+  - For Unix: https://github.com/adrg/libvlc-go/wiki/Install-on-Linux
+  - For Windows: https://github.com/adrg/libvlc-go/wiki/Install-on-Windows
 
 ## Installation
+
 ```
 $ git clone https://github.com/PaulSayantan/TermTube.git
 
 $ cd TermTube
 
-$ CGO_CFLAGS="-w" go build 
+$ CGO_CFLAGS="-w" go build
 
 $ ./TermTube
 ```
-## Docker 
+
+## Docker
+
 Build
+
 ```
 docker build -t termtube
 ```
+
 or download pre-build image
+
 ```
 docker pull belikesayantan/termtube
 ```
+
 then run it
+
 ```
-docker run -it --device /dev/snd:/dev/snd termtube:latest 
+docker run -it --device /dev/snd:/dev/snd termtube:latest
 ```
 
 ## Codebase Map
+
 A feature map to visualize the code-base of the current project. Click [here](https://app.codesee.io/maps/9033a700-1d0c-11ec-a981-5f80e2c33b31)
 
 ## Show your support
