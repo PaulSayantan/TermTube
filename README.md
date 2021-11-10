@@ -60,7 +60,7 @@ docker run -it --device /dev/snd:/dev/snd termtube:latest
 
 ## Codebase Map
 
-A feature map to visualize the code-base of the current project. Click [here](https://app.codesee.io/maps/9033a700-1d0c-11ec-a981-5f80e2c33b31)
+A feature map to visualize the code-base of the current project. Click [here](https://app.codesee.io/maps/public/9033a700-1d0c-11ec-a981-5f80e2c33b31)
 
 ## Show your support
 
